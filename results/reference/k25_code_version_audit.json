@@ -1,0 +1,29 @@
+{
+  "description": "Historical provenance preserved; publication does not rewrite it as a match",
+  "historical_provenance_sha256": "e96b81cd9594d8010bbbdeeffc9e673f2fe6942f1482b399f785c4fc7ea8f0a7",
+  "changed_files": [
+    {
+      "path": "scripts/analyze_k25.py",
+      "recorded_sha256": "5f124dd964a56d7233276cc21fb821cecf0b9252507b06506bfedda61896a247",
+      "current_sha256": "aa53ac9ac683b5b79035a761b880962ac62ff3a40da1740ddc4c373d0b2541a9"
+    },
+    {
+      "path": "scripts/run_experiment.py",
+      "recorded_sha256": "3a89d97b6465e409860c7e05850c7f40f30fbf05b5354eb37ec4d889d7d1e766",
+      "current_sha256": "52f892b519f2e276a6daa79729a3f4bb2a7f1caf5eb737b96941fbe74de037b8"
+    },
+    {
+      "path": "src/cisc_rollout/client.py",
+      "recorded_sha256": "00bb15b9238df2c05e1369246443fd60707181f6bdf63ad95195bf7e3401fcd5",
+      "current_sha256": "fc02824df8d908eb401ec7885f29dc6e1a3db2d50c139bb60435600138460f87"
+    }
+  ],
+  "additional_modules_now_present": [
+    "src/cisc_rollout/artifact_falsifier.py",
+    "src/cisc_rollout/artifact_selector.py",
+    "src/cisc_rollout/evidence_policy_tools.py",
+    "src/cisc_rollout/evidence_verifier.py",
+    "src/cisc_rollout/static_selection.py",
+    "src/cisc_rollout/structured_tools.py"
+  ]
+}

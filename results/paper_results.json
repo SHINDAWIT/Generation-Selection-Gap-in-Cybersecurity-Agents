@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "description": "Integer count projection of preserved metrics; no new inference",
+  "scoring": "Strict primary; semantic K=50 is a separate retrospective diagnostic",
+  "counts": {
+    "development_strict": [
+      {
+        "k": 5,
+        "tasks": 15,
+        "oracle_correct": 4,
+        "modal_correct": 3
+      },
+      {
+        "k": 25,
+        "tasks": 15,
+        "oracle_correct": 7,
+        "modal_correct": 4
+      }
+    ],
+    "development_semantic_k50": {
+      "tasks": 15,
+      "oracle_correct": 10,
+      "modal_correct": 6,
+      "modal_incorrect": 8,
+      "modal_ambiguous": 1
+    },
+    "holdout": {
+      "tasks": 11,
+      "rollouts": 220,
+      "single_correct": 5,
+      "oracle_correct": 7,
+      "before_threshold": {
+        "correct": 6,
+        "incorrect": 5,
+        "abstained": 0
+      },
+      "after_threshold": {
+        "correct": 6,
+        "incorrect": 2,
+        "abstained": 3
+      },
+      "invalid_rollouts": 37
+    },
+    "external": {
+      "tasks": 35,
+      "rollouts": 700,
+      "single_correct": 2,
+      "oracle_correct": 3,
+      "before_threshold": {
+        "correct": 3,
+        "incorrect": 25,
+        "abstained": 7
+      },
+      "after_threshold": {
+        "correct": 2,
+        "incorrect": 7,
+        "abstained": 26
+      },
+      "invalid_rollouts": 159
+    }
+  },
+  "references": [
+    {
+      "path": "results/main_metrics.json",
+      "sha256": "7c316079d710923126e8d57608b706042002bae6d3b1dad0aeb86c48fc099b06"
+    },
+    {
+      "path": "results/k25_metrics.json",
+      "sha256": "8d9cfe3f5b960b015c3c2635bff9482113433ec08ddf16b1da6566e4e9a4c807"
+    },
+    {
+      "path": "results/k50_metrics.json",
+      "sha256": "641b0493ab717991c56ed4e1f6596a62f11125d6bef58ce1ddda731ada38ce18"
+    },
+    {
+      "path": "results/semantic_entropy_metrics.json",
+      "sha256": "c572756badd83a9c3f8a8567a1e7e9c901a428fcbce72c17e3d924af5861c690"
+    },
+    {
+      "path": "data/task_manifest.json",
+      "sha256": "9225d592bebbd87ebd54741785fdace2c5116b1c2fbfcfd4aee946a8e4df2517"
+    },
+    {
+      "path": "data/holdout_prepared_items.json",
+      "sha256": "75e6b31e1864741bacdc6a37f3b67ab244d4a9b65cfe30400cf5bebdfadb2cbd"
+    },
+    {
+      "path": "data/external_transfer_gold.json",
+      "sha256": "4a7350b813047858ece6297b71f4b7f9f20840e19d9fa0da929548f201d3ec54"
+    },
+    {
+      "path": "data/annotations/k50_semantic_clusters.json",
+      "sha256": "7905dfe2348b9c82807a58475bb0e2a6d9692fb66b39671dc956d7080117897c"
+    },
+    {
+      "path": "results/holdout_k20_metrics.json",
+      "sha256": "bbef1b09604a9e7ef61c38b187944a10ce961a317acd007202a2614d89394eab"
+    },
+    {
+      "path": "results/external_transfer_metrics.json",
+      "sha256": "0d02b0132e17022805d9c659d015a5fb875048c4582d3afee8940a341bd812bb"
+    }
+  ]
+}

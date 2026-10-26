@@ -1,0 +1,20 @@
+[
+  {
+    "path": "data/raw/main_k50_rollouts.jsonl",
+    "sha256": "4d417b9e08ee525d97ecb43367fc3756aeaf86df92008a0c95174252422c449f",
+    "records": 750,
+    "redistributed": false
+  },
+  {
+    "path": "data/raw/holdout_k20_rollouts.jsonl",
+    "sha256": "c4842f6cf4bac1966337bf3fdaea9b8f5717c18d7ecd7b61badafdeb0ab27a7d",
+    "records": 220,
+    "redistributed": false
+  },
+  {
+    "path": "data/raw/external_transfer_k20_rollouts.jsonl",
+    "sha256": "3fc0eef3cea03d54c5b98fc7573be89744e1936afa5109fcc7eee3a377b08452",
+    "records": 700,
+    "redistributed": false
+  }
+]
